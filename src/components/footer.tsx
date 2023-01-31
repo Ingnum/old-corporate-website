@@ -19,6 +19,7 @@ export default function Footer() {
                 <li><i className="bx bx-chevron-right"></i> <Link href="#about">概要</Link></li>
                 <li><i className="bx bx-chevron-right"></i> <Link href="#services">サービス</Link></li>
                 <li><i className="bx bx-chevron-right"></i> <Link href="#faq">FAQ</Link></li>
+                <li><i className="bx bx-chevron-right"></i> <Link href="#contact">お問い合わせ</Link></li>
               </ul>
             </div>
 
@@ -32,12 +33,11 @@ export default function Footer() {
             </div>
 
             <div className="col-lg-2 col-md-6 footer-links">
-              <h4>その他</h4>
+              <h4>CSR</h4>
               <ul>
-                <li><i className="bx bx-chevron-right"></i> <Link href="#">利用規約(共通)</Link></li>
                 <li><i className="bx bx-chevron-right"></i> <Link href="#">サイトポリシー</Link></li>
                 <li><i className="bx bx-chevron-right"></i> <Link href="#">プライバシーポリシー</Link></li>
-                <li><i className="bx bx-chevron-right"></i> <Link href="#contact">お問い合わせ</Link></li>
+                <li><i className="bx bx-chevron-right"></i> <Link href="#">情報セキュリティ基本方針</Link></li>
               </ul>
             </div>
           </div>
