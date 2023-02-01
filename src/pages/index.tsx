@@ -61,7 +61,7 @@ export default function Home() {
                 <ul>
                   <li><i className="ri-check-double-line"></i> ホスティング事業</li>
                   <li><i className="ri-check-double-line"></i> 受託開発事業</li>
-                  <li><i className="ri-check-double-line"></i> コンサルティング事業</li>
+                  {/*<li><i className="ri-check-double-line"></i> コンサルティング事業</li>*/}
                 </ul>
               </div>
               <div className="col-lg-6 pt-4 pt-lg-0">

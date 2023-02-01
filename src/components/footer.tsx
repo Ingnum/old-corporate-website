@@ -28,7 +28,7 @@ export default function Footer() {
               <ul>
                 <li><i className="bx bx-chevron-right"></i> <Link href="https://www.ingnum.host/">サーバーホスティング事業</Link></li>
                 <li><i className="bx bx-chevron-right"></i> <Link href="#">受託開発事業</Link></li>
-                <li><i className="bx bx-chevron-right"></i> <Link href="#">コンサルティング事業</Link></li>
+                {/*<li><i className="bx bx-chevron-right"></i> <Link href="#">コンサルティング事業</Link></li>*/}
               </ul>
             </div>
 
