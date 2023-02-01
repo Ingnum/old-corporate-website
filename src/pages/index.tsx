@@ -7,6 +7,8 @@ import Services from '../components/services/services'
 import ServicesItem from '../components/services/servicesItem'
 import Team from '../components/team/team'
 import TeamItem from '../components/team/teamItem'
+import FAQ from '../components/faq/faq'
+import FAQItem from '../components/faq/faqItem'
 
 export default function Home() {
   return (
@@ -135,6 +137,19 @@ export default function Home() {
             }
           />
         </Team>
+
+        <FAQ>
+          <FAQItem
+            question="学生割引とはなんですか？"
+            answer={
+              <span>
+                イングナムネットワークスが運営するサービスであれば、どこでも使える割引です。<br />
+                また、対象は満22歳以下の社会人ではない者と定めています。<br />
+                ※サービスによって割引率は異なります。
+              </span>
+            }
+          />
+        </FAQ>
       </main>
 
       <Footer />
