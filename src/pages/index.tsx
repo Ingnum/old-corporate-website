@@ -1,9 +1,12 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Services from '../components/services/services'
 import ServicesItem from '../components/services/servicesItem'
+import Team from '../components/team/team'
+import TeamItem from '../components/team/teamItem'
 
 export default function Home() {
   return (
@@ -59,9 +62,9 @@ export default function Home() {
                 <p>イングナムネットワークスは、2022年12月に発足されたサービスです。ITに興味を持つ学生を支援することを目的に、インターネットに関する事業を行っています。</p>
                 <p>サーバーホスティング事業を中心とし、様々な事業を展開しています。<br />また、当サービスは個人事業主が運営しています。</p>
                 <ul>
-                  <li><i className="ri-check-double-line"></i> ホスティング事業</li>
-                  <li><i className="ri-check-double-line"></i> 受託開発事業</li>
-                  {/*<li><i className="ri-check-double-line"></i> コンサルティング事業</li>*/}
+                  <li><i className="ri-check-double-line" /> ホスティング事業</li>
+                  <li><i className="ri-check-double-line" /> 受託開発事業</li>
+                  {/*<li><i className="ri-check-double-line" /> コンサルティング事業</li>*/}
                 </ul>
               </div>
               <div className="col-lg-6 pt-4 pt-lg-0">
@@ -104,6 +107,34 @@ export default function Home() {
             url="https://www.ingnum./"
           />*/}
         </Services>
+
+        {/* Section: Team */}
+        <Team>
+          <TeamItem
+            image="/images/team/liam.png"
+            name="Liam Flamel"
+            role="Owner / Chief Developer"
+            social={
+              <>
+                <Link href="https://twitter.com/LiamFlamel" target="_blank" rel="noreferrer"><i className="bi bi-twitter" /></Link>
+                <Link href="https://github.com/LiamFlamel" target="_blank" rel="noreferrer"><i className="bi bi-github" /></Link>
+              </>
+            }
+          />
+          <TeamItem
+            image="/images/team/minidon.png"
+            name="みにどん"
+            role="Platform Developer"
+            social={
+              <>
+                <Link href="https://www.youtube.com/@M1n1don" target="_blank" rel="noreferrer"><i className="bi bi-youtube" /></Link>
+                <Link href="https://twitter.com/M1n1don" target="_blank" rel="noreferrer"><i className="bi bi-twitter" /></Link>
+                <Link href="https://github.com/M1n1don" target="_blank" rel="noreferrer"><i className="bi bi-github" /></Link>
+                <Link href="https://twitch.tv/M1n1don" target="_blank" rel="noreferrer"><i className="bi bi-twitch" /></Link>
+              </>
+            }
+          />
+        </Team>
       </main>
 
       <Footer />
