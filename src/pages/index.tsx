@@ -2,6 +2,8 @@ import Head from 'next/head'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
+import Services from '../components/services/services'
+import ServicesItem from '../components/services/servicesItem'
 
 export default function Home() {
   return (
@@ -80,6 +82,28 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Section: Services */}
+        <Services>
+          <ServicesItem
+            icon="bx bx-server"
+            title="Ingnum Hosting"
+            content="ゲームサーバーやVPSなどのサーバーホスティングを行っています。また、学生割引も用意しています。"
+            url="https://www.ingnum.host/"
+          />
+          <ServicesItem
+            icon="bx bx-math"
+            title="Ingnum Technology"
+            content="MinecraftプラグインからWebサイトまで多種多様なシステムやアプリを受託開発しています。"
+            url="https://www.ingnum.tech/"
+          />
+          {/*<ServicesItem
+            icon="bx bx-buildings"
+            title="Ingnum Consulting"
+            content="Minecraftサーバーなど、主に学生が運営するインターネット事業のコンサルティングを行っています。"
+            url="https://www.ingnum./"
+          />*/}
+        </Services>
       </main>
 
       <Footer />
