@@ -138,6 +138,7 @@ export default function Home() {
           />
         </Team>
 
+        {/* Section: F.A.Q */}
         <FAQ>
           <FAQItem
             question="学生割引とはなんですか？"
@@ -150,6 +151,74 @@ export default function Home() {
             }
           />
         </FAQ>
+
+        <section id="contact" className="contact section-bg">
+          <div className="container" data-aos="fade-up">
+
+            <div className="section-title">
+              <h2>お問い合わせ</h2>
+              <p>お問い合わせ</p>
+            </div>
+
+            <div className="row">
+
+              <div className="col-lg-6">
+
+                <div className="row">
+                  <div className="col-md-12">
+                    <div className="info-box">
+                      <i className="bx bx-map"></i>
+                      <h3>所在地</h3>
+                      <p>日本 静岡県 某所</p>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="info-box mt-4">
+                      <i className="bx bx-envelope"></i>
+                      <h3>メールアドレス</h3>
+                      <p>contact@ingnum.net<br /><br /></p>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="info-box mt-4">
+                      <i className="bx bx-phone-call"></i>
+                      <h3>電話番号</h3>
+                      <p>非公開<br /><br /></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div className="col-lg-6">
+                <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+                  <div className="row">
+                    <div className="col-md-6 form-group">
+                      <input type="text" name="name" className="form-control" id="name" placeholder="お名前" required />
+                    </div>
+                    <div className="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="email" className="form-control" name="email" id="email" placeholder="メールアドレス" required />
+                    </div>
+                  </div>
+                  <div className="form-group mt-3">
+                    <input type="text" className="form-control" name="subject" id="subject" placeholder="題名" required />
+                  </div>
+                  <div className="form-group mt-3">
+                    <textarea className="form-control" name="message" rows={5} placeholder="内容" required></textarea>
+                  </div>
+                  <div className="my-3">
+                    <div className="loading">Loading</div>
+                    <div className="error-message"></div>
+                    <div className="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div className="text-center"><button type="submit">送信</button></div>
+                </form>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
       </main>
 
       <Footer />
