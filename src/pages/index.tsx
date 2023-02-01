@@ -152,6 +152,7 @@ export default function Home() {
           />
         </FAQ>
 
+        {/* Section: Contact */}
         <section id="contact" className="contact section-bg">
           <div className="container" data-aos="fade-up">
 
