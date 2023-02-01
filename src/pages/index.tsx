@@ -42,6 +42,34 @@ export default function Home() {
         </div>
       </section>
 
+      <main className="main">
+        <section id="about" className="about">
+          <div className="container" data-aos="fade-up">
+
+            <div className="section-title">
+              <h2>概要</h2>
+              <p>イングナムネットワークスとは</p>
+            </div>
+
+            <div className="row content">
+              <div className="col-lg-6">
+                <p>イングナムネットワークスは、2022年12月に発足されたサービスです。ITに興味を持つ学生を支援することを目的に、インターネットに関する事業を行っています。</p>
+                <p>サーバーホスティング事業を中心とし、様々な事業を展開しています。<br />また、当サービスは個人事業主が運営しています。</p>
+                <ul>
+                  <li><i className="ri-check-double-line"></i> ホスティング事業</li>
+                  <li><i className="ri-check-double-line"></i> 受託開発事業</li>
+                  <li><i className="ri-check-double-line"></i> コンサルティング事業</li>
+                </ul>
+              </div>
+              <div className="col-lg-6 pt-4 pt-lg-0">
+                <a className="twitter-timeline" href="https://twitter.com/IngnumNet?ref_src=twsrc%5Etfw">Tweets by IngnumNet</a> <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8" />
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </main>
+
       <Footer />
     </>
   )
