@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-lg-6 col-md-6 col-md-6">
               <div className="footer-info">
-                <iframe src="https://discord.com/widget?id=1049303803180101712&theme=dark" width="100%" height="400" allowTransparency={true} frameBorder={0} sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                <iframe src="https://discord.com/widget?id=1049303803180101712&theme=dark" width="100%" height="400" frameBorder={0} sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" style={{ backgroundColor: 'transparent' }} />
               </div>
             </div>
 
