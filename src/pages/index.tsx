@@ -43,6 +43,7 @@ export default function Home() {
       </section>
 
       <main className="main">
+        {/* Section: About */}
         <section id="about" className="about">
           <div className="container" data-aos="fade-up">
 
@@ -66,6 +67,17 @@ export default function Home() {
               </div>
             </div>
 
+          </div>
+        </section>
+
+        {/* Section: CTA */}
+        <section id="cta" className="cta">
+          <div className="container" data-aos="zoom-in">
+            <div className="text-center">
+              <h3>Discordに参加する</h3>
+              <p>Discordサーバーに参加すると、イングナムネットワークスの情報をいち早く受け取ることができます。<br />また、Twitterでは公開していないような事前情報なども知ることができます。</p>
+              <a className="cta-btn" href="https://dc.ingnum.net/" target="_blank" rel="noreferrer">ここをクリック</a>
+            </div>
           </div>
         </section>
       </main>
