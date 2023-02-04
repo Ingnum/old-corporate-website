@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'boxicons/css/boxicons.min.css'
 import 'remixicon/fonts/remixicon.css'
+import 'animate.css'
+import 'aos/dist/aos.css'
 
 import '../styles/global.css'
 
