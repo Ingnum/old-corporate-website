@@ -1,13 +1,23 @@
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 export default function Header() {
+  const [scrollY, setScrollY] = useState(0)
+  const handleScroll = () => {
+    setScrollY(window.scrollY)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <header id="header" className="fixed-top">
+    <header id="header" className={'fixed-top' + (scrollY > 100 ? ' header-scrolled' : '') }>
       <div className="container d-flex align-items-center justify-content-between">
         <h1 className="logo"><Link href="#">Ingnum</Link></h1>
         <nav id="navbar" className="navbar">
           <ul>
-            <li><Link href="#top" className="nav-link scrollto active">トップ</Link></li>
+            <li><Link href="#top" className="nav-link scrollto">トップ</Link></li>
             <li><Link href="#about" className="nav-link scrollto">概要</Link></li>
             <li><Link href="#services" className="nav-link scrollto">サービス</Link></li>
             <li><Link href="#faq" className="nav-link scrollto">FAQ</Link></li>
