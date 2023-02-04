@@ -212,7 +212,9 @@ export default function Home() {
                     <div className="error-message"></div>
                     <div className="sent-message">Your message has been sent. Thank you!</div>
                   </div>
-                  <div className="text-center"><button type="submit">送信機能は実装されていません。</button></div>
+                  <div className="text-center">
+                    <button type="submit">送信機能は実装されていません。</button>
+                  </div>
                 </form>
               </div>
 

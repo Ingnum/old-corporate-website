@@ -404,7 +404,7 @@ h6 {
 
 #top .carousel-item::before {
   content: "";
-  background-color: rgba(4, 12, 21, 0.5);
+  /* background-color: rgba(4, 12, 21, 0.5); */
 }
 
 #top .carousel-container {
