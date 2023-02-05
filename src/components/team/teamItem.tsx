@@ -1,10 +1,8 @@
-import Image from 'next/image'
-
 export default function TeamItem(props: any) {
   return (
     <div className="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
       <div className="member" data-aos="zoom-in" data-aos-delay="100">
-        <Image src={ props.image } className="img-fluid" alt="" width={306} height={306} />
+        <img src={ props.image } className="img-fluid" alt="" width={306} height={306} />
         <div className="member-info">
           <div className="member-info-content">
             <h4>{ props.name }</h4>
