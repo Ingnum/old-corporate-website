@@ -12,10 +12,7 @@ export default function Header() {
   }, [])
 
   const [mobileNavigation, setMobileNavigation] = useState(false)
-
-  function clickedMobileNavButton() {
-    setMobileNavigation(!mobileNavigation)
-  }
+  const [mobileDropdown, setMobileDropDown] = useState(false)
 
   return (
     <header id="header" className={'fixed-top' + (scrollY > 100 ? ' header-scrolled' : '') }>
@@ -23,13 +20,13 @@ export default function Header() {
         <h1 className="logo"><Link href="#">Ingnum</Link></h1>
         <nav id="navbar" className={'navbar' + (mobileNavigation ? ' navbar-mobile' : '')}>
           <ul>
-            <li><Link href="#top" className="nav-link scrollto">トップ</Link></li>
-            <li><Link href="#about" className="nav-link scrollto">概要</Link></li>
-            <li><Link href="#services" className="nav-link scrollto">サービス</Link></li>
-            <li><Link href="#faq" className="nav-link scrollto">FAQ</Link></li>
-            <li className="dropdown">
+            <li><Link href="#top" className="nav-link scrollto" onClick={() => { setMobileNavigation(false) }}>トップ</Link></li>
+            <li><Link href="#about" className="nav-link scrollto" onClick={() => { setMobileNavigation(false) }}>概要</Link></li>
+            <li><Link href="#services" className="nav-link scrollto" onClick={() => { setMobileNavigation(false) }}>サービス</Link></li>
+            <li><Link href="#faq" className="nav-link scrollto" onClick={() => { setMobileNavigation(false) }}>FAQ</Link></li>
+            <li className="dropdown" onClick={() => { setMobileDropDown(!mobileDropdown) }}>
               <Link href="#"><span>SNS</span> <i className="bi bi-chevron-down"></i></Link>
-              <ul>
+              <ul className={ mobileDropdown ? 'dropdown-active' : '' }>
                 <li><Link href="https://yt.ingnum.net/" target="_blank" rel="noreferrer">YouTube</Link></li>
                 <li><Link href="https://twtr.ingnum.net/" target="_blank" rel="noreferrer">Twitter</Link></li>
                 <li><Link href="https://dc.ingnum.net/" target="_blank" rel="noreferrer">Discord</Link></li>
@@ -38,7 +35,7 @@ export default function Header() {
             </li>
             <li><Link href="https://blog.ingnum.net/" className="getstarted scrollto">ブログへ</Link></li>
           </ul>
-          <i className={'bi mobile-nav-toggle ' + (mobileNavigation ? 'bi-x' : 'bi-list')} onClick={ clickedMobileNavButton } />
+          <i className={'bi mobile-nav-toggle ' + (mobileNavigation ? 'bi-x' : 'bi-list')} onClick={() => { setMobileNavigation(!mobileNavigation) }} />
         </nav>
       </div>
     </header>
