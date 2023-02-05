@@ -11,11 +11,17 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll)
   }, [])
 
+  const [mobileNavigation, setMobileNavigation] = useState(false)
+
+  function clickedMobileNavButton() {
+    setMobileNavigation(!mobileNavigation)
+  }
+
   return (
     <header id="header" className={'fixed-top' + (scrollY > 100 ? ' header-scrolled' : '') }>
       <div className="container d-flex align-items-center justify-content-between">
         <h1 className="logo"><Link href="#">Ingnum</Link></h1>
-        <nav id="navbar" className="navbar">
+        <nav id="navbar" className={'navbar' + (mobileNavigation ? ' navbar-mobile' : '')}>
           <ul>
             <li><Link href="#top" className="nav-link scrollto">トップ</Link></li>
             <li><Link href="#about" className="nav-link scrollto">概要</Link></li>
@@ -32,7 +38,7 @@ export default function Header() {
             </li>
             <li><Link href="https://blog.ingnum.net/" className="getstarted scrollto">ブログへ</Link></li>
           </ul>
-          <i className="bi bi-list mobile-nav-toggle"></i>
+          <i className={'bi mobile-nav-toggle ' + (mobileNavigation ? 'bi-x' : 'bi-list')} onClick={ clickedMobileNavButton } />
         </nav>
       </div>
     </header>
